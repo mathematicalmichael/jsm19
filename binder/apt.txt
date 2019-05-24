@@ -1,0 +1,4 @@
+texlive-xetex
+texlive-luatex
+texlive-fonts-recommended
+texlive-science
