@@ -1,0 +1,44 @@
+\begin{block}{Example}
+\centering
+    Consider an exponential decay problem with uncertain initial condition:
+%    \begin{equation*}
+%        \partial_t u = - u, \; u(t_0) = \lambda^\dagger = 0.5
+%    \end{equation*}
+\vspace{-0.5cm}
+    \begin{figure}
+        \includegraphics[width=26cm]{exponential_decay_response_sigma-10E-4}
+    \end{figure}
+
+%\end{block}
+
+\vspace{1cm}
+
+%\begin{block}{Convergence}
+\centering
+\heading{\LARGE Convergence}
+{\emph How do solutions change with more data?}
+\vspace{-0.5cm}
+    \begin{figure}
+        \includegraphics[width=26cm]{updated_convergence_sigma-10E-4}
+        \vspace{-0.5cm}
+        \caption*{ $\param^\dagger$ and $\updated$ for $D=1, 10, 50, 100$ for $N=1000$}
+    \end{figure}
+
+%\end{block}
+
+\vspace{1cm}
+
+%\begin{block}{Stability}
+\heading{\LARGE Stability}
+{\emph How do solutions on conditionals of $\nspace$ compare?}
+\vspace{-0.5cm}
+    \begin{figure}
+        \includegraphics[width=13cm]{updated_stability_D1_sigma-10E-4}
+        \includegraphics[width=13cm]{updated_stability_D10_sigma-10E-4}
+        \includegraphics[width=13cm]{updated_stability_D50_sigma-10E-4}
+        \includegraphics[width=13cm]{updated_stability_D100_sigma-10E-4}
+        \vspace{-1cm}
+        \caption*{$\param^\dagger$ and $\updated$ for one hundred realizations of $\noise^\dagger$ for $D=1, 10, 50, 100$}
+    \end{figure}
+
+\end{block}

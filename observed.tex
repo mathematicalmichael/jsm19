@@ -1,0 +1,30 @@
+\begin{block}{Observed Distribution}
+\centering
+\Large
+    $Q(\param^\dagger, \noise) \sim \observed$ when we allow $\noise$ to vary over $\nspace$
+\vspace{1cm}
+    \begin{table}
+      \centering
+      %{\setlength{\extrarowheight}{15pt}i
+      {\setlength{\tabcolsep}{0.25em}
+      \begin{tabular}{c <{\hspace{1pc}} c >{\hspace{1pc}} c}
+        %\toprule
+        \large
+        \textbf{$F(\obs, \data^\dagger)$} & \textbf{$\noise$} & {$\observed$} \\
+        \midrule
+        $\frac{1}{\sigma\sqrt{D}} \large\sum \left( \obs_i\lam - \data_i^\dagger \right)$ & $ \noise \sim L^2$ & $N(0,1) $ \\[1.5ex]
+        $\frac{1}{\sigma^2} \large\sum \left ( \obs_i\lam - \data_i^\dagger \right)^2$ & $ \noise \sim N(0,\sigma^2) $ & $\chi^2 (D)$ \\[1.5ex]
+        $\frac{1}{\sigma^2 D} \large\sum \left ( \obs_i\lam - \data_i^\dagger \right)^2$ & $ \noise \sim N(0,\sigma^2) $ & $ \Gamma \left ( D/2, D/2) \right ) $ \\
+        \normalsize\vdots & \normalsize\vdots & \normalsize\vdots \\
+        \bottomrule
+      \end{tabular}
+      }
+      %\caption{\large Choices of $F$ and associated $\observed$ for problem, where $\data_i^\dagger = \data(\noise_i^\dagger)$.}
+    \end{table}
+
+%    \begin{figure}
+%        \includegraphics[width=15cm]{converge}
+%        \caption{$\observed$ compared to $Q(\param^\dagger,\noise)$ for $D=1$.}
+%    \end{figure}
+%
+\end{block}
