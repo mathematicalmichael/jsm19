@@ -7,7 +7,7 @@ texlive-fonts-recommended
 texlive-fonts-extra
 dvipng
 lmodern
-mtxrun
+context
 ghostscript
 texlive-xetex
 texlive-luatex
