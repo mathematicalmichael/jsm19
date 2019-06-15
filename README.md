@@ -22,8 +22,11 @@ Specify these in `beamerthemegemini.sty`.
 
 # Environment
 Jupyterlab will run when you click the binder link. Make sure you open Terminal and run
+
 `git config user.name Username`
+
 `git config user.email user@mail.com` 
+
 
 In order to be able to commit changes and push them back to GitHub. You can use the Git interface on the left panel for visual commits/staging. 
 
