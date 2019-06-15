@@ -1,8 +1,13 @@
 #!/bin/bash
 
+# run matplotlib once to generate the font cache
+python -c "import matplotlib as mpl; mpl.use('Agg'); import pylab as plt; fig, ax = plt.subplots(); fig.savefig('test.png')"
+	
+test -e test.png && rm test.png
+
 jupyter labextension install @jupyterlab/latex@0.6.1
 jupyter labextension enable --sys-prefix @jupyterlab/latex@0.6.1
 jupyter labextension install @jupyterlab/git
 pip install jupyterlab-git
 jupyter serverextension enable --py jupyterlab_git
-
+jupyter lab build
