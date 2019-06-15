@@ -8,5 +8,6 @@ dvipng
 ghostscript
 texlive-xetex
 texlive-luatex
+lmodern
 vim
 qrencode
