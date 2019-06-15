@@ -15,3 +15,7 @@ All of the images are generated in the `.ipynb` file. Fonts were easily visible.
 # Building the Poster
 Run `make` in terminal. [WIP]: Binder badge
 
+# Find fonts
+`mtxrun --script fonts --list --all | grep "fontname"` to search for available fonts on system.
+
+Specify these in `beamerthemegemini.sty`.
