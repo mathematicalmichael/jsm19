@@ -5,9 +5,9 @@ texlive-latex-extra
 texlive-fonts-recommended
 texlive-fonts-extra
 dvipng
+lmodern
 ghostscript
 texlive-xetex
 texlive-luatex
-lmodern
 vim
 qrencode
