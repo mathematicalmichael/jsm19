@@ -1,3 +1,4 @@
+texlive
 texlive-latex-base
 texlive-latex-recommended
 texlive-science
@@ -6,6 +7,7 @@ texlive-fonts-recommended
 texlive-fonts-extra
 dvipng
 lmodern
+mtxrun
 ghostscript
 texlive-xetex
 texlive-luatex
