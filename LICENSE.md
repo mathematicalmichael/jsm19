@@ -1,6 +1,7 @@
 The MIT License (MIT)
 =====================
 
+**Modifications (c) 2019 Michael Pilosov (mpilosov@gmail.com)**
 **Copyright (c) 2018 Anish Athalye (me@anishathalye.com)**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
