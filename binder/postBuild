@@ -16,3 +16,6 @@ jupyter lab build
 
 mtxrun --script fonts --reload
 luaotfload-tool --update
+
+# remember git login credentials
+git config --global credential.helper "cache --timeout 144000"
