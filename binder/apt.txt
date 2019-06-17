@@ -6,10 +6,14 @@ texlive-latex-extra
 texlive-fonts-recommended
 texlive-fonts-extra
 dvipng
+
 lmodern
-context
 ghostscript
+
+context
+
 texlive-xetex
 texlive-luatex
+fonts-lato
 vim
 qrencode
