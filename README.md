@@ -42,3 +42,14 @@ to build the poster and run
 `make clean`
 
 to get rid of the temporary cache files. 
+
+
+# Extras
+
+## Generate QR Codes
+### Usage
+`qrencode website-name -o output.png`
+
+### Help
+
+`qrencode --help`
