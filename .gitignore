@@ -11,6 +11,7 @@
 .gitconfig
 .local/
 .viminfo
+*.ipynb_checkpoint*
 .cache/*
 .config/*
 *.swp
