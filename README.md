@@ -3,7 +3,7 @@
 # JSM 2019 Poster Presentation
 
 # Beamer Poster Theme
-The dependencies can be found in `/binder/apt.txt` and information about the theme is at [poster_cse](https://github.com/mathematicalmichael/poster_cse/blob/master/README.md).
+The dependencies can be found in `/binder/apt.txt` (on the `binder` branch), and information about the theme is at [poster_cse](https://github.com/mathematicalmichael/poster_cse/blob/master/README.md).
 This is a work in progress. Font dependencies are Google Raleway and ~~Lato~~ cormorantgaramond. May vary by machine. Change these in the `.sty` file.
 
 
