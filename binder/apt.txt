@@ -1,0 +1,16 @@
+texlive
+texlive-latex-base
+texlive-latex-recommended
+texlive-science
+texlive-latex-extra
+texlive-fonts-recommended
+texlive-fonts-extra
+dvipng
+lmodern
+ghostscript
+context
+texlive-xetex
+texlive-luatex
+fonts-lato
+vim
+qrencode
