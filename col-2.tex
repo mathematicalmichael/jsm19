@@ -1,21 +1,25 @@
-\begin{block}{Introduction}
+\begin{block}{Intro to Data Consistent Inversion}
 \centering
-        \heading{Motivation} 
-            {\large How do we update initial descriptions of uncertainty using model predictions and data?}
+        \heading{Solving Stochastic Inverse Problems} 
+            %{\large How do we update initial descriptions of uncertainty using model predictions and data?}
 
         %\heading{Background}
              %{\large \emph{Data Consistent Inversion} is a Measure-Theoretic Framework for the solution of stochastic inverse problems. }
              {\large \textbf{Data-Consistent Inversion} is a novel framework that uses push-forward and pull-back measures to ensure solutions are consistent with the observed distribution of data.}
 
-        \heading{Question} 
-             {\large \emph{How do we cast a \textbf{Parameter Identification} problem in the context of Data-Consistent Inversion?} }
+        %\heading{Question} 
+         %    {\large \emph{How do we cast a \textbf{Parameter Identification} problem in the context of Data-Consistent Inversion?} }
+\vspace{0.5cm}
+\heading{The Approach}
+\[ \scalebox{1.5}{$\dci$} \]
+
 
 \end{block}
 
-\begin{block}{Approach}
+
+\begin{block}{Which Stochastic Inverse Problem?}
 \centering
 
-% \centering
 % \vspace{1cm}
 % \heading{Quantity of Interest Map}
 %     \emph{\large A Functional Relating \textbf{Predictions} and \textbf{Data}}
@@ -26,10 +30,10 @@
 %        \itembox{Practical} $Q \left (\param \right ) = F \left ( \obs(\param), \data^\dagger \right )$
 %        \itembox{Computable} $Q \left ( \pspace \right ) =: \dspace_\mathcal{C} \subset \dspace_\mathcal{T}$
 %     \end{itemize}
-%     \begin{figure}
-%         \includegraphics[height=23cm]{figures/diagram}
-%     \caption{\large \emph How do conditionals of $\nspace$ compare to the joint density?}
-%     \end{figure}
+    \begin{figure}
+        \includegraphics[height=23cm]{figures/diagram}
+    \caption{\large \emph Do you want to solve for a single parameter value or for a parameter distribution?}
+    \end{figure}
 
 
 % \vspace{1cm}
