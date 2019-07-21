@@ -75,13 +75,32 @@
 \DeclareMathOperator*{\dciD}{\updated = \initial \frac{\observed}{\predicted}}
 \DeclareMathOperator*{\dci}{\updated\lam = \initial\lam \frac{\observed\qlam}{\predicted\qlam}}
 
+% Bayesian Framework
+\DeclareMathOperator*{\hyperparam}{\alpha,\beta}
+\newcommand{\hyperspace}{\Omega}
+
+\DeclareMathOperator*{\hyper}{\left ( \hyperparam \right ) }
+\DeclareMathOperator*{\lamGiveq}{\left ( \param \mid \data \right ) }
+\DeclareMathOperator*{\qGivelam}{\left ( \data \mid \param \right ) }
+\DeclareMathOperator*{\qGivelamH}{\left ( \data \mid \param,\hyperparam \right ) }
+\DeclareMathOperator*{\lamGiveH}{\left ( \param \mid \hyperparam \right ) }
+
+\DeclareMathOperator*{\prior}{\pi_{prior}}
+\DeclareMathOperator*{\posterior}{\pi_{post}}
+\DeclareMathOperator*{\likelihood}{\pi_{L}}
+
+\DeclareMathOperator*{\bayes}{\posterior\lamGiveq \propto \prior\lam \likelihood\qGivelam}
+\DeclareMathOperator*{\Hbayes}{\posterior\lamGiveq \propto \int_\hyperspace \prior\hyper \prior\lamGiveH \likelihood\qGivelamH\,d\hyperspace}
+
+
+
 % ====================
 % Title
 % ====================
 
-\title{Push-forward Measures for Parameter Identification under Uncertainty}
+\title{Using Push-Forward and Pullback Measures for Parameter Identification and Distribution Estimation}
 
-\author{\color{black} Mathematical Michael}
+\author{\color{black} Tian Yu Yen and Michael Pilosov}
 %\institute[shortinst]{\color{black} under the direction of Dr. Troy Butler at the University of Colorado: Denver}
 \institute[shortinst]{\color{black} University of Colorado: Denver}
 
@@ -92,6 +111,7 @@
 \begin{document}
 
 \begin{frame}[t]
+\center\heading{THIS IS A BIG-ASS HEADING}
 \begin{columns}[t]
 \separatorcolumn
 
@@ -104,7 +124,7 @@
 \separatorcolumn
 
 \begin{column}{\colwidth}
-
+  \include{col-2}
   \include{notation}
 %   \vspace{-0.5cm}
   \include{references}
