@@ -21,19 +21,18 @@ Consider an exponential decay problem with uncertain decay rate:
    \end{equation*}
 
 \begin{tabular}{c|c}
-\hline
-\multirow{2}{*}{\vspace{1.5ex}\textbf{Simple Bayes}} & 
-$\begin{aligned}\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\right) \end{aligned}$ \\[1.25ex]
-                                        & $\bayes$ \\
-\hline
-\multirow{2}{*}{\vspace{2ex} \textbf{Hierarchical Bayes}}   & $\begin{aligned}
-        \prior\hyper &\sim \chi^2_1\; , \quad \alpha,\beta\in\Omega:=[0,\infty)\times[0,\infty) \\[1.25ex]
-        \prior\lamGiveH &\sim \text{Beta}\hyper \\[1.25ex]
-        \likelihood\qGivelam &\sim N\left(Q\lam,\sigma^2\right)\\[1.25ex] \end{aligned}$ \\[1.25ex]
-                                    & $\Hbayes$ \\
-\hline
-\textbf{Data Consistent} &  $\dci$ \\
-\hline
+\toprule
+\multirow{2}{*}{\textbf{Simple Bayes}} & 
+$\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\right) $ \\
+                                        & $\bayes$ \\ 
+\midrule
+\multirow{3}{*}{\textbf{Hierarchical Bayes}{*}}   &
+        $\prior\hyper \sim \chi^2_1\; , \quad \alpha,\beta\in\Omega :=[0,\infty)\times[0,\infty)$ \\
+        & $\prior\lamGiveH s\sim \text{Beta}\hyper, \quad \likelihood\qGivelam \sim N\left(Q\lam,\sigma^2\right)$ \\
+        & $\Hbayes$ \\
+\midrule
+\textbf{Data Consistent} &  $\dci$\\
+\bottomrule
 \end{tabular}
 \vspace{1cm}
 \heading{Plots of Concepts and Results}
@@ -54,7 +53,7 @@ $\begin{aligned}\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\
         \includegraphics[width=32cm]{figures/distr_EX_data_space.png}
         \vspace{-0.5cm}
         \centering
-        \caption{\large $\dspace$ Parameter Space  }
+        \caption{\large $\dspace$ Data Space  }
 \end{figure}
 
 
