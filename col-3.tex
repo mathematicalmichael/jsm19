@@ -5,7 +5,7 @@
             
             {\large \textbf{Data Consistent Context:} Uses data to construct a predicted distribution of the average residuals given $\lambda$.}
             
-            {\large How do we update initial descriptions of uncertainty using model predictions and data?}
+            %{\large How do we update initial descriptions of uncertainty using model predictions and data?}
 
         %\heading{Background}
              %{\large \emph{Data Consistent Inversion} is a Measure-Theoretic Framework for the solution of stochastic inverse problems. }
@@ -20,9 +20,9 @@
 \begin{block}{Example}
 \centering
     Consider an exponential decay problem with uncertain initial condition:
-%    \begin{equation*}
-%        \partial_t u = - u, \; u(t_0) = \lambda^\dagger = 0.5
-%    \end{equation*}
+   \begin{equation*}
+       u(t) = u_0\exp(-\lambda t), \; u_0 = 0.5 ,\; t\in[0,3]
+   \end{equation*}
 \vspace{-0.5cm}
     \begin{figure}
         \includegraphics[width=26cm]{figures/exponential_decay_response_sigma-10E-4}
@@ -34,8 +34,8 @@
 
 %\begin{block}{Convergence}
 \centering
-\heading{\LARGE Convergence}
-{\emph How do solutions change with more data?}
+\heading{Convergence of Data Consistent Approach}
+{\emph NEEDS EDIT: How do solutions change with more data?}
 \vspace{-0.5cm}
     \begin{figure}
         \includegraphics[width=26cm]{figures/updated_convergence_sigma-10E-4}
@@ -48,8 +48,8 @@
 \vspace{1cm}
 
 %\begin{block}{Stability}
-\heading{\LARGE Stability}
-{\emph How do solutions on conditionals of $\nspace$ compare?}
+\heading{Comparison to Bayes}
+{\emph NEEDS EDIT: How do solutions on conditionals of $\nspace$ compare?}
 \vspace{-0.5cm}
     \begin{figure}
         \includegraphics[width=13cm]{figures/updated_stability_D1_sigma-10E-4}
