@@ -13,20 +13,27 @@
 
 \begin{block}{Example}
 \centering
-$\begin{aligned}\prior\sim U[0,1]\end{aligned}$
+
 
 Consider an exponential decay problem with uncertain decay rate:
 \begin{equation*}
        u(t) = u_0\exp(-\lambda t), \; u_0 = 0.5 ,\; t=2
    \end{equation*}
 
-\begin{tabular}{cc}
-\multirow{3}{*}{\textbf{Simple Bayes}} & 
-$\prior\sim U[0,1]$ \\
-& $\likelihood\qGivelam \sim N\left(Q(\lam),\sigma^2\right)$ \\
-                                        & $\bayes$ \\[2ex]
-\textbf{Hierarchical Bayes} & $\Hbayes$\\
-\textbf{Data Consistent \vspace{1cm} Inversion} & $\dci$ \\
+\begin{tabular}{c|c}
+\hline
+\multirow{2}{*}{\vspace{1.5ex}\textbf{Simple Bayes}} & 
+$\begin{aligned}\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\right) \end{aligned}$ \\[1.25ex]
+                                        & $\bayes$ \\
+\hline
+\multirow{2}{*}{\vspace{2ex} \textbf{Hierarchical Bayes}}   & $\begin{aligned}
+        \prior\hyper &\sim U[\Omega]\; , \quad \Omega:=[0,\infty)\times[0,\infty) \\[1.25ex]
+        \prior\lamGiveH &\sim \text{Beta}\hyper \\[1.25ex]
+        \likelihood\qGivelam &\sim N\left(Q\lam,\sigma^2\right)\\[1.25ex] \end{aligned}$ \\[1.25ex]
+                                    & $\Hbayes$ \\
+\hline
+\textbf{Data Consistent} &  $\dci$ \\
+\hline
 \end{tabular}
 
 \begin{figure}
@@ -37,12 +44,13 @@ $\prior\sim U[0,1]$ \\
 
 \begin{figure}
         \includegraphics[width=30cm]{figures/distr_EX_lambda_space.png}
-        \vspace{-0.5cm}
+        \vspace{-1.5cm}
+        \centering
         \caption{ $\pspace$ Parameter Space }
 \end{figure}
 \begin{figure}
         \includegraphics[width=30cm]{figures/distr_EX_data_space.png}
-        \vspace{-0.5cm}
+        \vspace{-1.5cm}
         \centering
         \caption{$\dspace$ Parameter Space  }
 \end{figure}
