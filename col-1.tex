@@ -4,6 +4,8 @@
             {\large \textbf{Bayesian Context:} Simple Bayes model is insufficient, hierarchical Bayes model required.}
            
            {\large \textbf{Data Consistent Context:} Use data to construct observed distribution.}
+           
+           {\large \ }
 
         %\heading{Background}
              %{\large \emph{Data Consistent Inversion} is a Measure-Theoretic Framework for the solution of stochastic inverse problems. }
@@ -13,8 +15,6 @@
 
 \begin{block}{Example}
 \centering
-
-
 Consider an exponential decay problem with uncertain decay rate:
 \begin{equation*}
        u(t) = u_0\exp(-\lambda t), \; u_0 = 0.5 ,\; t=2
@@ -27,7 +27,7 @@ $\begin{aligned}\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\
                                         & $\bayes$ \\
 \hline
 \multirow{2}{*}{\vspace{2ex} \textbf{Hierarchical Bayes}}   & $\begin{aligned}
-        \prior\hyper &\sim U[\Omega]\; , \quad \Omega:=[0,\infty)\times[0,\infty) \\[1.25ex]
+        \prior\hyper &\sim \chi^2_1\; , \quad \alpha,\beta\in\Omega:=[0,\infty)\times[0,\infty) \\[1.25ex]
         \prior\lamGiveH &\sim \text{Beta}\hyper \\[1.25ex]
         \likelihood\qGivelam &\sim N\left(Q\lam,\sigma^2\right)\\[1.25ex] \end{aligned}$ \\[1.25ex]
                                     & $\Hbayes$ \\
@@ -35,22 +35,24 @@ $\begin{aligned}\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\
 \textbf{Data Consistent} &  $\dci$ \\
 \hline
 \end{tabular}
+\vspace{1cm}
+\heading{Plots of Concepts and Results}
+% \begin{figure}
+%         \includegraphics[width=10cm]{figures/distr_EX_hyper_param.png}
+%         \vspace{-0.5cm}
+%         \caption{$hyperspace$}
+% \end{figure}
 
 \begin{figure}
-        \includegraphics[width=5cm]{figures/distr_EX_hyper_param.png}
-        \vspace{-0.5cm}
-        \caption{ }
-\end{figure}
-
-\begin{figure}
-        \includegraphics[width=30cm]{figures/distr_EX_lambda_space.png}
-        \vspace{-1.5cm}
+        \includegraphics[width=40cm]{figures/distr_EX_lambda_space.png}
+        \vspace{-2.0cm}
         \centering
         \caption{ $\pspace$ Parameter Space }
 \end{figure}
+\vspace{-1.5cm}
 \begin{figure}
-        \includegraphics[width=30cm]{figures/distr_EX_data_space.png}
-        \vspace{-1.5cm}
+        \includegraphics[width=40cm]{figures/distr_EX_data_space.png}
+        \vspace{-2.0cm}
         \centering
         \caption{$\dspace$ Parameter Space  }
 \end{figure}
@@ -65,8 +67,7 @@ $\begin{aligned}\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\
 \begin{block}{Takeaways}
 
 \centering
-\vspace{1cm}
-    \heading{Data Consistent Inversion Performs Comparably with Hierarchical Bayes}
+    \heading{Non-parametric method with less sampling}
 %     \begin{equation*}
 %             \dciP \quad \vline \quad \dci
 %     \end{equation*}
@@ -74,10 +75,9 @@ $\begin{aligned}\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\
     %        \dci
     %\end{equation*}
 \begin{figure}
-        \includegraphics[width=30cm]{figures/distr_EX_comparison.png}
+        \includegraphics[width=35cm]{figures/distr_EX_comparison.png}
         \vspace{-0.5cm}
         \caption{ }
     \end{figure}
 \end{block}
-\heading{Non-parametric method with less sampling}
-\heading{Future Research: How is it connected to Dirchlet Processes?}
+%\textbf{Future research:} What are the connections to Dirchlet processes?
