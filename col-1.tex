@@ -12,13 +12,41 @@
 
 
 \begin{block}{Example}
-
 \centering
+$\begin{aligned}\prior\sim U[0,1]\end{aligned}$
+
+Consider an exponential decay problem with uncertain decay rate:
+\begin{equation*}
+       u(t) = u_0\exp(-\lambda t), \; u_0 = 0.5 ,\; t=2
+   \end{equation*}
+
 \begin{tabular}{cc}
-Hierarchical Bayes & $\Hbayes$\\
-Data Consistent Inversion & $\dci$ \\
-Simple Bayes & $\bayes$
+\multirow{3}{*}{\textbf{Simple Bayes}} & 
+$\prior\sim U[0,1]$ \\
+& $\likelihood\qGivelam \sim N\left(Q(\lam),\sigma^2\right)$ \\
+                                        & $\bayes$ \\[2ex]
+\textbf{Hierarchical Bayes} & $\Hbayes$\\
+\textbf{Data Consistent \vspace{1cm} Inversion} & $\dci$ \\
 \end{tabular}
+
+\begin{figure}
+        \includegraphics[width=5cm]{figures/distr_EX_hyper_param.png}
+        \vspace{-0.5cm}
+        \caption{ }
+\end{figure}
+
+\begin{figure}
+        \includegraphics[width=30cm]{figures/distr_EX_lambda_space.png}
+        \vspace{-0.5cm}
+        \caption{ $\pspace$ Parameter Space }
+\end{figure}
+\begin{figure}
+        \includegraphics[width=30cm]{figures/distr_EX_data_space.png}
+        \vspace{-0.5cm}
+        \centering
+        \caption{$\dspace$ Parameter Space  }
+\end{figure}
+
 
 \end{block}
 
