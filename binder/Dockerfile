@@ -1,21 +1,21 @@
 FROM gcr.io/kaggle-images/python:v60
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \ 
-    texlive && \
-    texlive-latex-base &&\
-    texlive-latex-recommended &&\
-    texlive-science &&\
-    texlive-latex-extra &&\
-    texlive-fonts-recommended &&\
-    texlive-fonts-extra &&\
-    dvipng &&\
-    lmodern &&\
-    ghostscript &&\
-    context &&\
-    texlive-xetex &&\
-    texlive-luatex &&\
-    fonts-lato &&\
-    vim &&\
+    texlive \
+    texlive-latex-base \
+    texlive-latex-recommended \
+    texlive-science \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    texlive-fonts-extra \
+    dvipng \
+    lmodern \
+    ghostscript \
+    context \
+    texlive-xetex \
+    texlive-luatex \
+    fonts-lato \
+    vim \
     qrencode
 
 RUN apt-get clean && \
