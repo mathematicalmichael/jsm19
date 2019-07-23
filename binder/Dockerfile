@@ -1,6 +1,7 @@
 FROM gcr.io/kaggle-images/python:v60
 RUN apt-get update && \
-    apt-get texlive && \
+    apt-get install -y --no-install-recommends \ 
+    texlive && \
     texlive-latex-base &&\
     texlive-latex-recommended &&\
     texlive-science &&\
@@ -16,6 +17,9 @@ RUN apt-get update && \
     fonts-lato &&\
     vim &&\
     qrencode
+
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # install the notebook and nbgitpuller packages
 RUN pip install --no-cache --upgrade pip && \
