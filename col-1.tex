@@ -3,9 +3,9 @@
         \heading{Goal: Obtain the Best Distribution of $\lambda$} 
             {\large \textbf{Bayesian Context:} Regular Bayes model is insufficient, Hierarchical Bayes model required.}
            
-           {\large \textbf{Data Consistent Context:} Use data to construct observed distribution.}
+           {\large \textbf{Data Consistent Context:} Use data to construct observed distribution. \\ \ }
            
-           {\large \  }
+           %{\large \  }
 
         %\heading{Background}
              %{\large \emph{Data Consistent Inversion} is a Measure-Theoretic Framework for the solution of stochastic inverse problems. }
@@ -19,10 +19,11 @@ Consider an exponential decay problem with uncertain decay rate:
 \begin{equation*}
        u(t) = u_0\exp(-\lambda t), \; u_0 = 0.5 ,\; t=2
    \end{equation*}
+\vspace{-0.25cm}
 
 \begin{tabular}{c|c}
 \toprule
-\multirow{2}{*}{\textbf{Simple Bayes}} & 
+\multirow{2}{*}{\textbf{Regular Bayes}} & 
 $\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\right) $ \\
                                         & $\bayes$ \\ 
 \midrule
@@ -34,7 +35,7 @@ $\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\ri
 \textbf{Data Consistent} &  $\dci$\\
 \bottomrule
 \end{tabular}
-\vspace{1cm}
+\vspace{1.cm}
 \heading{Plots of Concepts and Results}
 % \begin{figure}
 %         \includegraphics[width=10cm]{figures/distr_EX_hyper_param.png}
@@ -53,6 +54,8 @@ $\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\ri
         \includegraphics[width=32cm]{figures/distr_EX_data_space.png}
         \vspace{-0.5cm}
         \centering
+        \caption{150 observations of data}
+        \vspace{-0.5cm}
         \caption{\large $\dspace$ Data Space  }
 \end{figure}
 
@@ -60,7 +63,7 @@ $\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\ri
 \end{block}
 
 
-\vspace{-1.cm}
+\vspace{-0.75cm}
 
 
 \begin{block}{Takeaways}
