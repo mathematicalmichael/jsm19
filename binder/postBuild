@@ -22,4 +22,3 @@ luaotfload-tool --update
 git config --global credential.helper "cache --timeout 144000"
 rm -rf .git/
 rm -rf binder/
-git clone https://github.com/mathematicalmichael/jsm19
