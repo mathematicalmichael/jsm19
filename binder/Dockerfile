@@ -1,6 +1,6 @@
 FROM gcr.io/kaggle-images/python:v60
-
-RUN apt-get texlive && \
+RUN apt-get update && \
+    apt-get texlive && \
     texlive-latex-base &&\
     texlive-latex-recommended &&\
     texlive-science &&\
