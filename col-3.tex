@@ -1,7 +1,7 @@
 \begin{block}{Parameter Identification}
 \centering
         \heading{Goal: Obtain the Best Value of $\lambda$} 
-            {\large \textbf{Bayesian Context:} Simple Bayes model uses assumed likelihood function of data given $\lambda$.}
+            {\large \textbf{Bayesian Context:} Regular Bayes model uses assumed likelihood function of data given $\lambda$.}
             
             {\large \textbf{Data Consistent Context:} Uses data to construct a predicted distribution of the average residuals given $\lambda$.}
             
@@ -52,12 +52,12 @@
 {\emph How do solutions on conditionals of $\nspace$ compare?}
 \vspace{-0.5cm}
     \begin{figure}
-        \includegraphics[width=13cm]{figures/updated_stability_D1_sigma-10E-4}
+        \includegraphics[width=13cm]{figures/updated_stability_D10_sigma-10E-4}
         \includegraphics[width=13cm]{figures/updated_stability_D10_sigma-10E-4}\\
-        \includegraphics[width=13cm]{figures/updated_stability_D50_sigma-10E-4}
-        \includegraphics[width=13cm]{figures/updated_stability_D100_sigma-10E-4}
+        \includegraphics[width=13cm]{figures/posterior_stability_D100_sigma-10E-4}
+        \includegraphics[width=13cm]{figures/posterior_stability_D10_sigma-10E-4}
         \vspace{-1cm}
-        \caption{$\param^\dagger$ and $\updated$ for one hundred realizations of $\noise^\dagger$ for $D=1, 10, 50, 100$}
+        \caption{$\param^\dagger$ and $\updated$ for one hundred realizations of $\noise^\dagger$ for $D=10,100$ for the Data-Consistent (left) and Regular Bayes (right).}
     \end{figure}
 
 \end{block}
