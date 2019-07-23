@@ -22,6 +22,7 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 # install the notebook and nbgitpuller packages
+RUN conda install node
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook && \
     pip install --no-cache cbayes && \
