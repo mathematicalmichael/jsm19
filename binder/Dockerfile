@@ -1,10 +1,27 @@
 FROM gcr.io/kaggle-images/python:v60
 
+RUN apt-get texlive && \
+    texlive-latex-base &&\
+    texlive-latex-recommended &&\
+    texlive-science &&\
+    texlive-latex-extra &&\
+    texlive-fonts-recommended &&\
+    texlive-fonts-extra &&\
+    dvipng &&\
+    lmodern &&\
+    ghostscript &&\
+    context &&\
+    texlive-xetex &&\
+    texlive-luatex &&\
+    fonts-lato &&\
+    vim &&\
+    qrencode
+
 # install the notebook and nbgitpuller packages
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook && \
     pip install --no-cache cbayes && \
-    pip install --no-cache jupyterlab && \
+    pip install --no-cache jupyterlab>=0.35 && \
     pip install --no-cache jupyterlab-git && \
     pip install --no-cache jupyterlab_latex>=0.4.1 && \
     pip install --no-cache nbgitpuller
