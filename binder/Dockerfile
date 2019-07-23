@@ -24,9 +24,9 @@ RUN apt-get clean && \
 # install the notebook and nbgitpuller packages
 RUN conda update -n base -c defaults conda
 RUN conda install --yes -c conda-forge nodejs
-RUN conda install --yes -c conda-forge jupyterlab
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook && \
+    pip install --no-cache jupyterlab && \
     pip install --no-cache cbayes && \
     pip install --no-cache jupyterlab-git && \
     pip install --no-cache jupyterlab_latex>=0.4.1 && \
