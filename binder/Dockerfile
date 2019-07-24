@@ -36,7 +36,7 @@ RUN jupyter serverextension enable --py nbgitpuller --sys-prefix
 RUN jupyter labextension install @jupyterlab/git
 RUN jupyter serverextension enable --py jupyterlab_git --sys-prefix
 RUN jupyter labextension install @jupyterlab/latex@0.6.1
-RUN jupyter labextension enable --sys-prefix @jupyterlab/latex@0.6.1 
+RUN jupyter labextension enable @jupyterlab/latex@0.6.1 
 RUN jupyter lab build
 
 # create user with a home directory
