@@ -52,3 +52,4 @@ RUN adduser --disabled-password \
 WORKDIR ${HOME}
 USER ${USER}
 RUN git config --global credential.helper "cache --timeout 144000"
+ENV SHELL /bin/bash
