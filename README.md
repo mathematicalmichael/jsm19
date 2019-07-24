@@ -1,7 +1,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://gke.mybinder.org/v2/gh/mathematicalmichael/jsm19/binder?urlpath=/lab)
 
 Attempt at building on top of Kaggle for pyMC3 support:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://gke.mybinder.org/v2/gh/mathematicalmichael/jsm19/binder-alt?urlpath=git-pull?repo=https://github.com/mathematicalmichael/jsm19/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://gke.mybinder.org/v2/gh/mathematicalmichael/jsm19/binder-alt?urlpath=git-pull?repo=https://github.com/mathematicalmichael/jsm19?urlpath=lab/)
 
 # JSM 2019 Poster Presentation
 
