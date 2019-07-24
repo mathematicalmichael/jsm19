@@ -1,18 +1,15 @@
 \begin{block}{Distribution Estimation}
 \centering
         \heading{Goal: Obtain the Best Distribution of $\lambda$} 
-            {\large \textbf{Bayesian Context:} Regular Bayes model is insufficient, Hierarchical Bayes model required.}
-           
-           {\large \textbf{Data Consistent Context:} Use data to construct observed distribution. \\ \ }
-           
-           %{\large \  }
+        \begin{itemize}
+            \itembox{\bf \large Bayesian Context:} Regular Bayes insufficient, Hierarchical model required.
+            \itembox{\bf \large Data Consistent:} Use data to construct observed distribution. 
+        \end{itemize}
 
-        %\heading{Background}
-             %{\large \emph{Data Consistent Inversion} is a Measure-Theoretic Framework for the solution of stochastic inverse problems. }
-             
 \end{block}
 
-\vspace{-0.75cm}
+% \vspace{-0.5cm}
+
 \begin{block}{Example}
 \centering
 Consider an exponential decay problem with uncertain decay rate:
@@ -49,7 +46,9 @@ $\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\ri
         \centering
         \caption{\large $\pspace$ Parameter Space }
 \end{figure}
-\vspace{-0.5cm}
+
+% \vspace{-0.5cm}
+
 \begin{figure}
         \includegraphics[width=32cm]{figures/distr_EX_data_space.png}
         \vspace{-0.5cm}
@@ -62,9 +61,7 @@ $\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\ri
 
 \end{block}
 
-
-\vspace{-0.75cm}
-
+% \vspace{-0.5cm}
 
 \begin{block}{Takeaways}
 
@@ -76,7 +73,7 @@ $\prior \sim U[0,1]\; , \quad  \likelihood\qGivelam\sim N\left(Q\lam,\sigma^2\ri
     %\begin{equation*}
     %        \dci
     %\end{equation*}
-\vspace{-0.5cm}
+
 \begin{figure}
         \includegraphics[width=30cm]{figures/distr_EX_comparison.png}
         \vspace{-0.5cm} 

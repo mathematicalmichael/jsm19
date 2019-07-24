@@ -1,10 +1,13 @@
 \begin{block}{Parameter Identification}
 \centering
         \heading{Goal: Obtain the Best Value of $\lambda$} 
-            {\large \textbf{Bayesian Context:} Regular Bayes model uses assumed likelihood function of data given $\lambda$.}
+%             {\large \textbf{Bayesian Context:} Regular Bayes model uses assumed likelihood function of data given $\lambda$.}
             
-            {\large \textbf{Data Consistent Context:} Uses data to construct a predicted distribution of the average residuals given $\lambda$.}
-            
+%             {\large \textbf{Data Consistent Context:} Uses data to construct a predicted distribution of the average residuals given $\lambda$.}
+        \begin{itemize}
+            \itembox{\bf \large Bayesian Context:} Model uses assumed likelihood function of data given $\lambda$.
+            \itembox{\bf \large Data Consistent:} Construct predicted distribution of residuals given $\lambda$.
+        \end{itemize}            
             %{\large How do we update initial descriptions of uncertainty using model predictions and data?}
 
         %\heading{Background}
@@ -16,7 +19,8 @@
 
 \end{block}
 
-\vspace{-0.75cm}
+% \vspace{-0.5cm}
+
 \begin{block}{Example}
 \centering
     Consider an exponential decay problem with uncertain decay rate:
@@ -30,13 +34,13 @@
 
 %\end{block}
 
-\vspace{-0.5cm}
+% \vspace{-0.5cm}
 
 %\begin{block}{Convergence}
 \centering
 \heading{Convergence of Data Consistent Inversion}
 {\emph How do solutions change with more data?}
-\vspace{-0.5cm}
+% \vspace{-0.5cm}
     \begin{figure}
         \includegraphics[width=26cm]{figures/updated_convergence_sigma-10E-4}
         \vspace{-0.5cm}
@@ -45,12 +49,12 @@
 
 %\end{block}
 
-\vspace{-0.5cm}
+% \vspace{-0.5cm}
 
 %\begin{block}{Stability}
 \heading{Comparison to Regular Bayes}
 {\emph How do solutions on conditionals of $\nspace$ compare?}
-\vspace{-0.5cm}
+% \vspace{-0.5cm}
     \begin{figure}
         \includegraphics[width=13cm]{figures/updated_stability_D10_sigma-10E-4}
         \includegraphics[width=13cm]{figures/posterior_stability_D10_sigma-10E-4}\\
